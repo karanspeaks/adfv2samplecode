@@ -1,0 +1,3 @@
+{
+	"PipelineExclusion": ["pl-CopyBlobToSQL","pl-Orc2JsonConvertor"]
+}
