@@ -35,7 +35,7 @@ Select-AzureRmSubscription $azureSubscription
 $pipelines = Get-AzureRmDataFactoryV2Pipeline -ResourceGroupName $resourceGroupName -DataFactoryName $dataFactoryName
   
   
-#Getting Excluded Pipelines - can be used for Component or Helper Pipeliens which are involved by other Pipelines
+#Getting Excluded Pipelines - can be used for Component or Helper Pipelines which are invoked by other Pipelines
 $excludedPipelines = Get-Content  $excludedPipelinesFilePath\PipelineExclusion.json | Out-String | ConvertFrom-Json
   
   
